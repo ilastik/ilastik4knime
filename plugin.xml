@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.0"?>
 <plugin>
+   <extension
+         point="org.eclipse.core.runtime.preferences">
+      <initializer
+            class="org.ilastik.ilastik4knime.preferences.PreferenceInitializer">
+      </initializer>
+   </extension>
+   <extension
+         point="org.eclipse.ui.preferencePages">
+      <page
+            category="org.knime.knip.base.prefs.MainPreferencePage"
+            class="org.ilastik.ilastik4knime.preferences.IlastikPreferencePage"
+            id="org.ilastik.ilastik4knime.preferences.IlastikPreferencePage"
+            name="Ilastik Preferences">
+      </page>
+   </extension>
 </plugin>
