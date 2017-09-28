@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feature
+      id="org.ilastik.ilastik4knime.update"
+      label="KNIME ilastik Integration - Update-Site"
+      version="0.0.1.qualifier"
+      provider-name="University of Heidelberg">
+
+   <includes
+         id="org.ilastik.ilastik4knime.feature"
+         version="0.0.0"/>
+
+   <requires>
+      <import plugin="imglib2" version="4.2.1" match="greaterOrEqual"/>
+      <import plugin="imglib2-ij" version="2.0.37" match="greaterOrEqual"/>
+      <import plugin="imagej-common" version="0.24.4" match="greaterOrEqual"/>
+      <import plugin="ij" version="1.51.0" match="greaterOrEqual"/>
+      <import plugin="scijava-common" version="2.64.0" match="greaterOrEqual"/>
+      <import plugin="org.knime.base"/>
+      <import plugin="org.knime.workbench.repository"/>
+      <import plugin="org.apache.log4j" version="1.2.15" match="greaterOrEqual"/>
+      <import plugin="org.eclipse.core.runtime"/>
+      <import plugin="org.eclipse.ui"/>
+      <import plugin="org.knime.knip.imagej2.core" version="0.1.0" match="greaterOrEqual"/>
+      <import plugin="org.knime.knip.core" version="1.4.0" match="greaterOrEqual"/>
+      <import plugin="imglib2" version="2.2.0" match="greaterOrEqual"/>
+      <import plugin="scijava-common" version="2.36.0" match="greaterOrEqual"/>
+      <import plugin="ilastik4ij" version="1.0.2" match="greaterOrEqual"/>
+   </requires>
+
+   <plugin
+         id="ilastik4ij"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"
+         unpack="false"/>
+
+   <plugin
+         id="org.ilastik.ilastik4knime"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+</feature>
