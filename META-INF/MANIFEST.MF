@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bundle-Name: ilastik KNIME integration
+Bundle-SymbolicName: org.ilastik.ilastik4knime;singleton:=true
+Bundle-ManifestVersion: 2
+Bundle-Version: 0.0.1.qualifier
+Bundle-Vendor: University of Heidelberg
+Eclipse-RegisterBuddy: org.knime.core, org.knime.knip.imagej2.core
+Require-Bundle: org.knime.base,
+ org.knime.workbench.repository,
+ org.apache.log4j;bundle-version="1.2.15",
+ org.eclipse.core.runtime,
+ org.eclipse.ui,
+ org.knime.knip.imagej2.core;bundle-version="0.1.0",
+ org.knime.knip.core;bundle-version="1.4.0",
+ imglib2;bundle-version="2.2.0",
+ scijava-common;bundle-version="2.36.0",
+ ilastik4ij;bundle-version="1.0.2"
+Bundle-RequiredExecutionEnvironment: JavaSE-1.8
+Bundle-ClassPath: ilastik4knime.jar
+Bundle-ActivationPolicy: lazy
+
